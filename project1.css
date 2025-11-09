@@ -75,7 +75,11 @@ nav > ul > li > a:link, nav > ul > li > a:visited {
     color: rgb(215, 159, 223);
     text-decoration: underline;
 }
-
+nav img {
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
 /* Section Styles */
 section {
