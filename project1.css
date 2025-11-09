@@ -1,7 +1,6 @@
 @charset "utf-8";
 /*
-   Project 1
-   TSS Typographic Style Sheet
+   Project 1 Style Sheet
    Author: Jewel Sanchez
    Date: 08 November 2025   
    
@@ -21,10 +20,9 @@ body {
     font-family: Courier, monospace;
     color:black
 }
-.container-with-background {
-    background-color: hsl(278, 52%, 85%); /* Background color for gap between sections */
-    color:white;
-    margin: 50px;
+header {
+    background-color: rgb(215, 159, 223);
+    padding-top: 10px;
 }
 .purple-list{
     background-color: hsl(278, 52%, 85%);
@@ -79,6 +77,14 @@ nav > ul > li > a:link, nav > ul > li > a:visited {
 }
 
 
+/* Section Styles */
+section {
+    background-color: hsl(278, 52%, 85%); /* Background color for gap between sections */
+    color:white;
+    margin: 50px;
+}
+
+
 /* Footer Styles */
 
 body > footer {
@@ -88,6 +94,3 @@ body > footer {
         Courier, monospace;
     text-align: center;
 }
-    
-
-/*
