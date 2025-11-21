@@ -18,36 +18,24 @@ li, main, nav, ol, p, section, span, ul {
     vertical-align: baseline;
     box-sizing: border-box;
 }
-nav ul {
-    list-style: none;
-    list-style-image: none;
-}
-nav a {
-    text-decoration: none;
-}
 
 
 /* HTML and Body Styles */
 
 html {
     background-color:white;
-}
-
-html {height: 100%;}
-body {min-height: 100%;}
-body > header > img {
-    display: block;
-    width: 100%;
+    height: 100%;
 }
 
 body {
     margin:auto;
     width: 95%;
+    min-height: 100%;
     min-width: 640px;
     font-family: Courier, monospace;
     color:black;
     line-height: 2;
-   
+    box-sizing: border-box;
 }
 
 header {
@@ -56,25 +44,39 @@ header {
     padding-bottom: 10px;
     text-align: center;
 }
+
+body > header > img {
+    display: block;
+    width: 100%;
+}
+
 .purple-list{
     background-color: hsl(278, 52%, 85%);
     color:white;
-    padding-left: 5px;
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:medium;
 }
+
+article{
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:10px;
+}
+
 
 /* Floating Styles*/
 
-nav li {
+body> header > nav li {
+    width: 33.3333%;
     display: block;
     float: left;
-}
-nav li a{
-    display: block;
     text-align: center;
 }
-body> header > nav li {
-    width: 33%;
-}
+
 
 /* Heading Styles */
 
@@ -84,6 +86,9 @@ h1 {
 }
 h2 {
     font-size: 1.5em;
+    border-radius: 40px;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 h1, h2 {
     font-family: Courier, monospace;
@@ -94,7 +99,7 @@ h1, h2 {
 }
 h3{
     color: black;
-    outline-color: white;
+    outline-color: rgb(215, 159, 223);
     text-align: center;
     padding: 10px;
     font-weight: 600;
@@ -104,16 +109,16 @@ h3{
 
 /* Navigation Styles */	
 
-nav {
-    font-size: 0.8em;
-    background-color: hsl(278, 52%, 85%);
-    border-radius: 20px;
+nav ul {
+    list-style: none;
+    list-style-image: none;
 }
 
-nav > ul {
+nav > ul > li {
+    font-size: 0.8em;
     line-height: 4em;
     list-style-type: none;
-    padding-left: 5px;
+    background-color: hsl(278, 52%, 85%);
 }
 
 nav > ul > li > a:link, nav > ul > li > a:visited {
@@ -122,8 +127,8 @@ nav > ul > li > a:link, nav > ul > li > a:visited {
     text-align: center;
     display: block;
 }
- nav > ul > li > a:hover, nav > ul > li > a:active {
-    color: pink;
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color: white;
     text-decoration: underline;
     text-align: center;
     display: block;
@@ -134,35 +139,36 @@ nav img {
     margin-right: 5px;
 }
 
-/* UL Styles */
-ul{
-    padding: 15px;
-    margin:10px;
-}
-
 
 /* Footer Styles */
 
 body > footer {
     background-color: rgb(215, 159, 223);
     color: white; 
-    font: normal small-caps bold 0.9em/3em,
-        Courier, monospace;
     text-align: center;
+    position: relative;
+    margin-top: 100px;
+    clear: both;
 }
+
 
 /* Right Column Styles */
 section#rightColumn {
     float: right;
     width:33%;
+    padding: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 section#rightColumn img {
     display: block;
-    width: 80%;
+    width: 100%;
     float:right;
-    padding: 5px;
+    padding: 10px;
+    background-color:hsl(278, 52%, 85%);
 }
+
 
 /* Left Column Styles */
 
@@ -171,5 +177,9 @@ section#leftColumn {
     float: left;
     width: 67%;
     padding: 5px;
+    margin-bottom: 10px;
+}
 
+section#leftColumn > ul {
+    padding-left:15px;
 }
